@@ -1,0 +1,106 @@
+# Tokenizer
+tokenizer:
+  _component_: torchtune.models.llama3.llama3_tokenizer
+  path: ./llama-3-models/Llama3.2-1B-Instruct/tokenizer.model
+  max_seq_len: null
+
+# Dataset
+dataset:
+  _component_: dataset.threed_mllm_dataset
+  task_type: "3-I"
+  dataset_name: "ObjaWorld"
+  text_source: ""
+  image_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/objaworld/images/train_vqgan_indices.json"
+  three_d_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/objaworld/3d-scenes/train_tokenized_scenes.json"
+  image_target: ""
+  three_d_target: ""
+  image_token_offset: 129471
+  no_loss_on_input: True
+  reorder_image_tokens: True
+  load_text_source: False
+  load_image_source: True
+  load_three_d_source: True
+  load_text_target: False
+  load_image_target: False
+  load_three_d_target: False
+
+seed: null
+shuffle: True
+
+# Model Arguments
+model:
+  _component_: models.llama3_2_1b_clevr3d_sin_cos_plus_learned_numbers_SYNTHETIC_LIVINGROOM_PARK_LARGE_EP100
+  freeze_llama3_token_embeddings: True
+start_from_original_llama3: True
+
+checkpointer:
+  _component_: checkpointer.FullModelMetaCheckpointer3D
+  checkpoint_dir: ./llama-3-models/Llama3.2-1B-Instruct/
+  checkpoint_files: [
+    consolidated.00.pth
+  ]
+  recipe_checkpoint: null
+  output_dir: ./checkpoints/objaworld/rendering/
+  model_type: LLAMA3_2
+  convert_weights_type: 3d_sin_cos_plus_learned_num
+resume_from_checkpoint: False
+
+# Fine-tuning arguments
+batch_size: 32
+epochs: 10
+optimizer:
+  _component_: bitsandbytes.optim.PagedAdamW8bit
+  lr: 1e-4
+loss:
+  _component_: torch.nn.CrossEntropyLoss 
+  reduction: none
+
+weight_first_positions: 5
+weight_first_positions_with_weight: 10.0
+
+max_steps_per_epoch: null
+gradient_accumulation_steps: 1
+optimizer_in_bwd: False 
+compile: False
+
+# Training environment
+device: cuda
+
+# Memory management
+enable_activation_checkpointing: False
+
+# Reduced precision
+dtype: bf16
+
+# Logging
+metric_logger:
+  _component_: torchtune.training.metric_logging.DiskLogger
+  log_dir: ${output_dir}
+output_dir: ./checkpoints/objaworld/rendering/
+log_every_n_steps: 1
+log_peak_memory_stats: False
+
+# Profiler (disabled)
+profiler:
+  _component_: torchtune.training.setup_torch_profiler
+  enabled: False
+
+  #Output directory of trace artifacts
+  output_dir: ${output_dir}/profiling_outputs
+
+  #`torch.profiler.ProfilerActivity` types to trace
+  cpu: True
+  cuda: True
+
+  #trace options passed to `torch.profiler.profile`
+  profile_memory: True
+  with_stack: False
+  record_shapes: True
+  with_flops: False
+
+  # `torch.profiler.schedule` options:
+  # wait_steps -> wait, warmup_steps -> warmup, active_steps -> active, num_cycles -> repeat
+  wait_steps: 1
+  warmup_steps: 2
+  active_steps: 1
+  num_cycles: 1

@@ -1,0 +1,6 @@
+[submodule "torchtune"]
+	path = torchtune
+	url = https://github.com/pytorch/torchtune.git
+[submodule "taming-transformers"]
+	path = taming-transformers
+	url = https://github.com/CompVis/taming-transformers.git
