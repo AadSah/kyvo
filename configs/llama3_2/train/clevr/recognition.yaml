@@ -10,8 +10,8 @@ dataset:
   task_type: "I-3"
   dataset_name: "CLEVR"
   text_source: ""
-  image_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/images/train_vqgan_indices_merged_for_rendering_and_recognition.json"
-  three_d_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/train_tokenized_scenes_merged_for_rendering_and_recognition.json"
+  image_source: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/images/train_vqgan_indices_merged_for_rendering_and_recognition.json"
+  three_d_source: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/train_tokenized_scenes_merged_for_rendering_and_recognition.json"
   image_target: ""
   three_d_target: ""
   image_token_offset: 129471

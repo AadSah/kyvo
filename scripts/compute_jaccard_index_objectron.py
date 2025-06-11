@@ -16,7 +16,7 @@ parser.add_argument(
     "--method",
     type=str,
     required=True,
-    help="Method used for predictions - 'cube-rcnn' or '3d-mllm'",
+    help="Method used for predictions - 'cube-rcnn' or 'kyvo'",
 )
 
 args = parser.parse_args()
@@ -112,7 +112,7 @@ if args.method == "cube-rcnn":
             final_preprocessed_prediction_data[image_id][obj["category"]][
                 "dimensions"
             ].append(np.array(obj["dimensions"]))
-elif args.method == "3d-mllm":
+elif args.method == "kyvo":
     final_preprocessed_prediction_data = {}
     for pred_scene in predictions["scenes"]:
         pred_objects = pred_scene["objects"]

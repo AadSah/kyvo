@@ -20,10 +20,10 @@ the llama3_2_1b model builder uses the llama3_2 component builder to create the
 Llama3.2 1B model.
 """
 
-DOMAIN_AGNOSTIC_VQGAN_CODEBOOK_PATH = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/domain-agnostic/quantize_weight_8192.npy"
-CLEVR_VQGAN_CODEBOOK_PATH = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/clevr/custom_vqgan_embedding_1024CLEVRLARGE_256dim.npy"
-OBJAWORLD_VQGAN_CODEBOOK_PATH = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/objaworld/custom_vqgan_embedding_256SYNTHETIC_LIVINGROOM_PARK_LARGE_EP100_256dim.npy"
-OBJECTRON_VQGAN_CODEBOOK_PATH = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/objectron/custom_vqgan_embedding_256Omni3D-OBJECTRON_256dim.npy"
+DOMAIN_AGNOSTIC_VQGAN_CODEBOOK_PATH = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/domain-agnostic/quantize_weight_8192.npy"
+CLEVR_VQGAN_CODEBOOK_PATH = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/clevr/custom_vqgan_embedding_1024CLEVRLARGE_256dim.npy"
+OBJAWORLD_VQGAN_CODEBOOK_PATH = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/objaworld/custom_vqgan_embedding_256SYNTHETIC_LIVINGROOM_PARK_LARGE_EP100_256dim.npy"
+OBJECTRON_VQGAN_CODEBOOK_PATH = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/objectron/custom_vqgan_embedding_256Omni3D-OBJECTRON_256dim.npy"
 
 
 def lora_llama3_2_1b_clevr3d_sin_cos_numbers(

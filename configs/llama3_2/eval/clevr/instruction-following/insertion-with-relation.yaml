@@ -41,12 +41,12 @@ load_text_target_data: False
 load_image_target_data: True
 load_three_d_target_data: True
 
-image_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/images/instruction-following-eval-source/test_vqgan_indices_insertion_with_relation.json"
-image_target_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/images/instruction-following-eval-target/test_vqgan_indices_insertion_with_relation.json"
+image_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/images/instruction-following-eval-source/test_vqgan_indices_insertion_with_relation.json"
+image_target_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/images/instruction-following-eval-target/test_vqgan_indices_insertion_with_relation.json"
 
-text_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/text/instruction-following-eval/test_text_instructions_insertion_with_relation.json"
-three_d_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/instruction-following-eval-source/test_tokenized_scenes_insertion_with_relation.json"
-three_d_target_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/instruction-following-eval-target/test_tokenized_scenes_insertion_with_relation.json"
+text_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/text/instruction-following-eval/test_text_instructions_insertion_with_relation.json"
+three_d_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/instruction-following-eval-source/test_tokenized_scenes_insertion_with_relation.json"
+three_d_target_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/instruction-following-eval-target/test_tokenized_scenes_insertion_with_relation.json"
 
 run_identifier: "clevr_instruction-following-insertion-with-relation_inference"
 image_embeddings_output_folder: "./checkpoints/clevr/instruction-following-inference/image_embeddings"

@@ -10,8 +10,8 @@ dataset:
   task_type: "I-3"
   dataset_name: "ObjaWorld"
   text_source: ""
-  image_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/objaworld/images/train_vqgan_indices.json"
-  three_d_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/objaworld/3d-scenes/train_tokenized_scenes.json"
+  image_source: "./kyvo-datasets-and-codebooks/pretokenized-data/objaworld/images/train_vqgan_indices.json"
+  three_d_source: "./kyvo-datasets-and-codebooks/pretokenized-data/objaworld/3d-scenes/train_tokenized_scenes.json"
   image_target: ""
   three_d_target: ""
   image_token_offset: 129471

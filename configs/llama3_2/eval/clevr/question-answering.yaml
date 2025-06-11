@@ -41,13 +41,13 @@ load_image_target_data: False
 load_three_d_target_data: False
 
 
-image_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/images/test_vqgan_indices_for_vqa.json"
-image_target_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/images/test_vqgan_indices_for_vqa.json"
+image_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/images/test_vqgan_indices_for_vqa.json"
+image_target_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/images/test_vqgan_indices_for_vqa.json"
 
-text_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/text/test_vqa_questions.json"
-text_target_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/text/test_vqa_answers.json"
-three_d_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/test_tokenized_scenes_for_vqa.json"
-three_d_target_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/test_tokenized_scenes_for_vqa.json"
+text_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/text/test_vqa_questions.json"
+text_target_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/text/test_vqa_answers.json"
+three_d_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/test_tokenized_scenes_for_vqa.json"
+three_d_target_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/test_tokenized_scenes_for_vqa.json"
 
 run_identifier: "clevr_question-answering_inference"
 image_embeddings_output_folder: "./checkpoints/clevr/question-answering-inference/image_embeddings"

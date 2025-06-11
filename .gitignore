@@ -1,9 +1,5 @@
 __pycache__/
-configs/
-data/
 checkpoints/
-temp-testing/
-3d-mllm-datasets-and-codebooks/
+kyvo-datasets-and-codebooks/
 taming/
 taming-transformers/
-results-reproduce.sh

@@ -44,17 +44,17 @@ torch.set_grad_enabled(False)
 
 is_gumbel = False
 if args.vqgan_type == "clevr":
-    config_path = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/clevr/2024-10-10T09-21-36_custom_vqgan_CLEVR-LARGE/configs/2024-10-10T09-21-36-project.yaml"
-    ckpt_path = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/clevr/2024-10-10T09-21-36_custom_vqgan_CLEVR-LARGE/checkpoints/last.ckpt"
+    config_path = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/clevr/2024-10-10T09-21-36_custom_vqgan_CLEVR-LARGE/configs/2024-10-10T09-21-36-project.yaml"
+    ckpt_path = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/clevr/2024-10-10T09-21-36_custom_vqgan_CLEVR-LARGE/checkpoints/last.ckpt"
 elif args.vqgan_type == "objaworld":
-    config_path = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/objaworld/2025-01-17T09-02-22_custom_vqgan_SYNTHETIC_LIVINGROOM_PARK_LARGE_EP100/configs/2025-01-17T09-02-22-project.yaml"
-    ckpt_path = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/objaworld/2025-01-17T09-02-22_custom_vqgan_SYNTHETIC_LIVINGROOM_PARK_LARGE_EP100/checkpoints/last.ckpt"
+    config_path = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/objaworld/2025-01-17T09-02-22_custom_vqgan_SYNTHETIC_LIVINGROOM_PARK_LARGE_EP100/configs/2025-01-17T09-02-22-project.yaml"
+    ckpt_path = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/objaworld/2025-01-17T09-02-22_custom_vqgan_SYNTHETIC_LIVINGROOM_PARK_LARGE_EP100/checkpoints/last.ckpt"
 elif args.vqgan_type == "objectron":
-    config_path = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/objectron/2024-11-03T05-41-42_custom_vqgan_OMNI3D_OBJECTRON_ep200/configs/2024-11-03T05-41-42-project.yaml"
-    ckpt_path = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/objectron/2024-11-03T05-41-42_custom_vqgan_OMNI3D_OBJECTRON_ep200/checkpoints/last.ckpt"
+    config_path = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/objectron/2024-11-03T05-41-42_custom_vqgan_OMNI3D_OBJECTRON_ep200/configs/2024-11-03T05-41-42-project.yaml"
+    ckpt_path = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/objectron/2024-11-03T05-41-42_custom_vqgan_OMNI3D_OBJECTRON_ep200/checkpoints/last.ckpt"
 elif args.vqgan_type == "domain-agnostic":
-    config_path = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/domain-agnostic/vqgan_gumbel_f8/configs/model.yaml"
-    ckpt_path = "./3d-mllm-datasets-and-codebooks/vqgan-models-and-codebooks/domain-agnostic/vqgan_gumbel_f8/checkpoints/last.ckpt"
+    config_path = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/domain-agnostic/vqgan_gumbel_f8/configs/model.yaml"
+    ckpt_path = "./kyvo-datasets-and-codebooks/vqgan-models-and-codebooks/domain-agnostic/vqgan_gumbel_f8/checkpoints/last.ckpt"
     is_gumbel = True
 
 config = load_config(

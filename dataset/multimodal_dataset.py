@@ -16,7 +16,7 @@ from tqdm import tqdm
 
 class ThreeDMLLMDataset(Dataset):
     """
-    Dataset class for 3D-MLLM data. This dataset is used for multimodal tasks that require text, image, and 3D data.
+    Dataset class for Kyvo data. This dataset is used for multimodal tasks that require text, image, and 3D data.
 
     Args:
         task_type (str): The type of task to perform. Options are "I-3", "3-I", "I+Q-A", "I+3+Q-A", "3+I+Q-A", "3+T-3", etc
@@ -223,7 +223,7 @@ class ThreeDMLLMDataset(Dataset):
             self._three_d_target_keys = list(sorted(self._three_d_target.keys()))
 
         print("Total number of samples: ", len(common_keys))
-        print(f"Initialization of 3D-MLLM dataset complete for {self.dataset_name}!")
+        print(f"Initialization of Kyvo dataset complete for {self.dataset_name}!")
 
     def reorder_list_optimized(self, data):
         n = len(data)

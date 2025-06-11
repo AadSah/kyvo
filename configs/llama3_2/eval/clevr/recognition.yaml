@@ -41,12 +41,12 @@ load_text_target_data: False
 load_image_target_data: False
 load_three_d_target_data: False
 
-image_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/images/test_vqgan_indices_merged_for_rendering_and_recognition.json"
-image_target_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/images/test_vqgan_indices_merged_for_rendering_and_recognition.json"
+image_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/images/test_vqgan_indices_merged_for_rendering_and_recognition.json"
+image_target_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/images/test_vqgan_indices_merged_for_rendering_and_recognition.json"
 
-text_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/test_tokenized_scenes_merged_for_rendering_and_recognition.json"
-three_d_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/test_tokenized_scenes_merged_for_rendering_and_recognition.json"
-three_d_target_file: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/test_tokenized_scenes_merged_for_rendering_and_recognition.json"
+text_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/test_tokenized_scenes_merged_for_rendering_and_recognition.json"
+three_d_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/test_tokenized_scenes_merged_for_rendering_and_recognition.json"
+three_d_target_file: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/test_tokenized_scenes_merged_for_rendering_and_recognition.json"
 
 run_identifier: "clevr_recognition_inference"
 image_embeddings_output_folder: "./checkpoints/clevr/recognition-inference/image_embeddings"

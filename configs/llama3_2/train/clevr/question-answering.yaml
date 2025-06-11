@@ -9,10 +9,10 @@ dataset:
   _component_: dataset.threed_mllm_dataset
   task_type: "I+3+Q-A"
   dataset_name: "CLEVR"
-  text_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/text/train_vqa_questions.json"
-  image_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/images/train_vqgan_indices_for_vqa.json"
-  three_d_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/train_tokenized_scenes_for_vqa.json"
-  text_target: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/text/train_vqa_answers.json"
+  text_source: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/text/train_vqa_questions.json"
+  image_source: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/images/train_vqgan_indices_for_vqa.json"
+  three_d_source: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/train_tokenized_scenes_for_vqa.json"
+  text_target: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/text/train_vqa_answers.json"
   image_target: ""
   three_d_target: ""
   image_token_offset: 129471

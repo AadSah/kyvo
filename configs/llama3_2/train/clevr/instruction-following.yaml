@@ -9,11 +9,11 @@ dataset:
   _component_: dataset.threed_mllm_dataset
   task_type: "I+3+T-I+3"
   dataset_name: "CLEVR"
-  text_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/text/train_text_instructions.json"
-  image_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/images/train_vqgan_indices_source.json"
-  three_d_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/train_tokenized_scenes_source.json"
-  image_target: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/images/train_vqgan_indices_target.json"
-  three_d_target: "./3d-mllm-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/train_tokenized_scenes_target.json"
+  text_source: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/text/train_text_instructions.json"
+  image_source: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/images/train_vqgan_indices_source.json"
+  three_d_source: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/train_tokenized_scenes_source.json"
+  image_target: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/images/train_vqgan_indices_target.json"
+  three_d_target: "./kyvo-datasets-and-codebooks/pretokenized-data/clevr/3d-scenes/train_tokenized_scenes_target.json"
   image_token_offset: 129471
   no_loss_on_input: True
   reorder_image_tokens: True

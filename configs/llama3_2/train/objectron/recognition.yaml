@@ -10,8 +10,8 @@ dataset:
   dataset_name: "Omni3D-Objectron"
   task_type: "I-3"
   text_source: ""
-  image_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/objectron/images/train_vqgan_indices.json"
-  three_d_source: "./3d-mllm-datasets-and-codebooks/pretokenized-data/objectron/3d-scenes/train_tokenized_scenes.json"
+  image_source: "./kyvo-datasets-and-codebooks/pretokenized-data/objectron/images/train_vqgan_indices.json"
+  three_d_source: "./kyvo-datasets-and-codebooks/pretokenized-data/objectron/3d-scenes/train_tokenized_scenes.json"
   image_target: ""
   three_d_target: ""
   image_token_offset: 128372
