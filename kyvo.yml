@@ -1,4 +1,4 @@
-name: 3d-mllm
+name: kyvo
 channels:
   - defaults
 dependencies:
@@ -105,4 +105,4 @@ dependencies:
       - werkzeug==3.1.3
       - xxhash==3.5.0
       - yarl==1.18.3
-prefix: /home/aadarsh/anaconda3/envs/3d-mllm
+prefix: /home/aadarsh/anaconda3/envs/kyvo

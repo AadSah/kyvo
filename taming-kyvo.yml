@@ -1,4 +1,4 @@
-name: taming-3d-mllm
+name: taming-kyvo
 channels:
   - pytorch
   - conda-forge
@@ -101,4 +101,4 @@ dependencies:
       - urllib3==2.2.3
       - werkzeug==3.0.6
       - zipp==3.20.2
-prefix: /home/aadarsh/anaconda3/envs/taming-3d-mllm
+prefix: /home/aadarsh/anaconda3/envs/taming-kyvo
